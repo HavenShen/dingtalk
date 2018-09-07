@@ -1,0 +1,34 @@
+{
+    "name": "enjelly/dingtalk",
+    "description": "Dingtalk SDK",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "HavenShen",
+            "email": "havenshen@gmail.com"
+        }
+    ],
+    "require": {
+        "pimple/pimple": "^3.0",
+        "symfony/cache": "^4.1",
+        "guzzlehttp/guzzle": "^6.3",
+        "monolog/monolog": "^1.23"
+    },
+    "autoload": {
+        "psr-4": {
+            "Enjelly\\": "src/"
+        },
+        "files": [
+            "src/Kernel/Helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Enjelly\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0",
+        "mockery/mockery": "^1.1"
+    }
+}
